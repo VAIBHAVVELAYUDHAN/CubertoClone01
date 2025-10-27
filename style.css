@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Matter", "Neue Montreal", sans-serif;
+}
+*::selection{
+    color:#fff;
+    background-color: #494949;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    background-color: #fff;
+}
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    width: 100px;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#nav a{
+    text-decoration: none ;
+    font-weight: 500;
+    color: black;
+   font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    letter-spacing: -1px;
+}
+#nav i{
+    margin-top: 0.9px;
+    font-size: 20px;
+}
+#home #homemain{
+    width: 100%;
+    padding: 15vw 15vw; 
+}
+#homemain h1 {
+    font-weight: 400;
+    letter-spacing: -.1vw;
+    font-size: 1.34vw;
+}
+#heading{
+    display: flex;
+    gap:40px;
+}
+#homemain #heading h1{
+    color: transparent;
+    -webkit-text-stroke: 1px  #000;
+    font-size: 6.8vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -8px;
+}
+#homemain #heading h1:hover{
+    color: black;
+}
+#homelast{
+    padding: 5vw 15vw;
+}
+#homelast p{
+     font-size: 1.4vw;
+     font-weight: 500;
+     letter-spacing: -0.03vw;
+}
+#homelast p::selection{
+    color:#fff;
+    background-color: #494949;
+}
+#featured{
+    padding: 10vw 15vw;
+}
+#fheader h1{
+    line-height: 1;
+    font-size: 3vw;
+    font-weight: 400;
+}
+#fheader h1:nth-of-type(2){    /* this is will select second <h1> inside of parent(featured)  */
+    color: transparent;
+    -webkit-text-stroke: 1px #000;                         
+}
+#fimages{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin-top: 5vw;
+    
+}
+#fleft{
+   width: 50%;
+  margin: 0 5vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.fleftelem{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.fleftelem h1{
+     font-size: 2.18vw;
+     line-height: 1;
+     font-weight: 400;
+     text-transform: capitalize;
+     margin: 1.5vw 0px;
+}
+.fleftelem h3{
+    font-size: 1.4vw;
+    font-weight: 300;
+}
+.fleftelem h4{
+    opacity: .5;
+}
+
+#fright{
+  width: 50%;
+  margin: 0 5vw;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+#fright .images {
+  width: 100%;  
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#fright .images img{
+  position: absolute; /* stack all images */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btndiv button{
+    margin: 1.5vw;
+    padding: 1.5vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #e6e6e6;
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.dev{
+    width: 100%;
+    padding: 5vw 15vw;
+
+}
+.dev h1{
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 400;
+    width: 100%;
+    max-width: 700px;
+    line-height: 1;
+}
+.dev p{
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: 200;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 1.5vw;
+    letter-spacing: -0.03vw;
+    line-height: 1.5;
+}
+.slides{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin:0 3vw ;
+    justify-content: space-between;
+    padding: 3vw 0;
+}
+.slide {
+    flex: 1 1 300px; /* ✅ makes slides flexible */
+    max-width: 32%;
+    min-width: 280px;
+}
+.slide .imgs1{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #494949;
+}
+.slide .imgs1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .tag{
+    width: fit-content;/*width we acc to its content*/
+    border-radius: 100px;
+    margin: 20px 0px;
+    padding: 10px 22px;
+   background-color: oklch(94.084% 0.00105 11.574);
+}
+.slide h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+.dev2{
+    width: 100%;
+    padding: 5vw 15vw;
+
+}
+.dev2  h1{
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 400;
+    width: 100%;
+    max-width: 700px;
+    line-height: 1;
+}
+.cuberto{
+     display: flex; 
+     flex-wrap: wrap;
+     gap: 2rem;
+     margin:0 3vw ;
+     justify-content: space-between;
+     padding: 3vw 0;
+}
+.card {
+    flex: 1 1 300px; /* ✅ makes slides flexible */
+    max-width: 32%;
+    min-width: 280px;
+}
+.card .imgs{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #494949;
+}
+.card .imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
